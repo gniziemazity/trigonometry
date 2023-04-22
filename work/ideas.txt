@@ -1,0 +1,9 @@
+ calculate x,y points on tangent of circle.
+ calculate sides of all types of triangle.
+ visualize these using canvas.
+ already have template for co-ordinate system,
+ have some functions already, can use these to 
+ compose functions to perform what I want.
+ future plans - build machine co-ordinate system
+ G53 = Machine zero-point, then add
+ G54 -> G59, later add G54P1 -> G54Pn.
