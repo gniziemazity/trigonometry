@@ -1,5 +1,8 @@
 // updates canvas
-function update() {
+import { average, toDeg } from "./general.js";
+import { drawPoint, drawLine, drawText, drawCoordinateSystem } from "./draw.js";
+
+export function update() {
     const sin = Math.sin(theta);
     const cos = Math.cos(theta);
     const tan = Math.tan(theta);

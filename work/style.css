@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    background: darkblue;
+}
+
+header {
+    text-align: center;
+    color: wheat;
+    padding: 1em 2em;
+    font-size: 2rem;
+}
+footer{
+    text-align: center;
+    color: wheat;
+    text-transform: capitalize;
+    padding: 1em;
+    font-size: 1.6rem;
+}
+canvas{
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.title {
+    color: wheat;
+    align-self: flex-start;
+    padding-left: 1em;
+    font-size: 1.7rem;
+}

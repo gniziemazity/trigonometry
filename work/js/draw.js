@@ -1,13 +1,13 @@
 //  canvas draw functions
 // example drawPoint({x:1,y:-2}, 2,"magenta")
-function drawPoint(loc, size = 2, color = "black") {
+export function drawPoint(loc, size = 2, color = "black",chartCtx) {
     chartCtx.beginPath();
     chartCtx.fillStyle = color;
     chartCtx.arc(loc.x, loc.y, size / 2, 0, Math.PI * 2);
     chartCtx.fill();
 }
 // example drawLine({x:0,y:0}, {x:1, y"-1}, "blue");
-function drawLine(p1, p2, color = "black") {
+export function drawLine(p1, p2, color = "black",ctx) {
     ctx.beginPath();
     ctx.strokeStyle = color;
     ctx.lineWidth = 2;
@@ -16,7 +16,7 @@ function drawLine(p1, p2, color = "black") {
     ctx.stroke();
 }
 // example drawText("a", {x:0,y:0}, "red")
-function drawText(text, loc, color = "black") {
+export function drawText(text, loc, color = "black",ctx) {
     ctx.beginPath();
     ctx.fillStyle = color;
     ctx.textAlign = "center";
@@ -29,7 +29,7 @@ function drawText(text, loc, color = "black") {
 }
 // example drawCoordinateSystem({x:0, y:0}, {xi:50%, yi:50%});
 
-function drawCoordinateSystem(ctx, offset) {
+export function drawCoordinateSystem(ctx, offset) {
     ctx.beginPath();
     ctx.moveTo(offset.x, 0);
     ctx.lineTo(-offset.x, 0);
@@ -41,3 +41,4 @@ function drawCoordinateSystem(ctx, offset) {
     ctx.stroke();
     ctx.setLineDash([]);
 }
+
